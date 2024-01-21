@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication1.AddWindow"
+        Title="AddWindow">
+    <Grid ColumnDefinitions="Auto * * Auto" RowDefinitions="* 50">
+        <StackPanel Grid.Column="1" Grid.Row="0">
+            <TextBox Margin="10" Watermark="Название"/>
+            <TextBox Margin="10" Watermark="0"/>
+            <TextBox Margin="10" Watermark="0"/>
+            <TextBox Margin="10" Watermark="Скидка"/>
+            <TextBox Margin="10" Watermark="Путь основной картинки"/>
+            <Button Margin="10" Content="Выбрать файл" BorderBrush="Black"/>
+            <ListBox>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Button Margin="10" Content="Добавить картинку" BorderBrush="Black"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="0">
+            <TextBox Margin="10" Watermark="Описание" Height="380"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center">
+            <Button Content="Сохранить" BorderBrush="Black" HorizontalAlignment="Center"/> 
+        </StackPanel>
+    </Grid>
+</Window>
